@@ -16,18 +16,26 @@
         margin: 7px;
         height: 50px;
         width: 305px;
+        border-style: solid;
+        border-width: 1px;
         border-radius: 10px;
-        border-color: rgb(214, 213, 213);
-        background-color: whitesmoke;
+        border-color: transparent;
+        background-color: rgb(252, 252, 252);
       }
       .textA {
         text-align: center;
         padding-top: 7px;
         font-size: 30px;
+        font-family: sans-serif;
       }
       .pokemon {
-        height: 230px;
-        width: 210px;
+        height: 290px;
+        width: 300px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: transparent;
+        border-radius: 10px;
+        margin-bottom: 10px;
       }
       .pokeball {
         margin-left: 5px;
@@ -35,18 +43,41 @@
         height: 35px;
         width: 35px;
       }
+
+      .types {
+        font-family: sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+      }
+
       .description {
+        padding-top: 2px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: transparent;
         border-radius: 10px;
-        height: 149px;
-        width: 305px;
-        background-color: whitesmoke;
+        height: 70px;
+        width: 300px;
+        background-color: rgb(252, 252, 252);
+      }
+      .badge:hover .description {
+        box-shadow: 2px 2px 10px grey;
+      }
+      .badge:hover .name {
+        box-shadow: 2px 2px 10px grey;
+      }
+      .badge:hover .pokemon {
+        box-shadow: 2px 2px 10px grey;
+      }
+      .badge:hover {
+        border-color: rgb(98, 105, 112);
       }
     </style>
   </head>
   <body>
     <center>
       <img
-        src="File:.//pics/logo.png"
+        src="File:.//pics/pokelogo.png"
         style="height:150px;width:450px;"
         alt="notFound"
       />
@@ -65,12 +96,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -85,12 +136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/002.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/002.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -105,12 +176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/003.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/003.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -125,12 +216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/004.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/004.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -145,12 +256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/005.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/005.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -165,12 +296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/006.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/006.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -185,12 +336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/007.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/007.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -205,12 +376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/008.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/008.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -225,12 +416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/009.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/009.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -245,12 +456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/008.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/008.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -265,12 +496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/011.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/011.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -285,12 +536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/012.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/012.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -305,12 +576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/013.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/013.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -325,12 +616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/014.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/014.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -345,12 +656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/015.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/015.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -365,12 +696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/016.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/016.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -385,12 +736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/017.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/017.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -405,12 +776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/018.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/018.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -425,12 +816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/019.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/019.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -445,12 +856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/020.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/020.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -465,12 +896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/021.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/021.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -485,12 +936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/022.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/022.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -505,12 +976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/023.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/023.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -525,12 +1016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/024.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/024.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -545,12 +1056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/025.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/025.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -565,12 +1096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/026.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/026.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -585,12 +1136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/027.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/027.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -605,12 +1176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/028.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/028.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -625,12 +1216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/029.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/029.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -645,12 +1256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/030.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/030.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -665,12 +1296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/031.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/031.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -685,12 +1336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/032.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/032.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -705,12 +1376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/033.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/033.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -725,12 +1416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/034.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/034.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -745,12 +1456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/035.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/035.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fairy.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -765,12 +1496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/036.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/036.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fairy.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -785,12 +1536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/037.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/037.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -805,12 +1576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/038.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/038.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -825,12 +1616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/039.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/039.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/fairy.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -845,12 +1656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/040.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/040.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/fairy.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -865,12 +1696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/041.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/041.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -885,12 +1736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/042.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/042.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -905,12 +1776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/043.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/043.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -925,12 +1816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/044.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/044.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -945,12 +1856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/045.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/045.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -965,12 +1896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/046.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/046.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -985,12 +1936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/047.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/047.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1005,12 +1976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/048.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/048.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1025,12 +2016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/049.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/049.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1045,12 +2056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/050.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/050.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1065,12 +2096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/051.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/051.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1085,12 +2136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/052.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/052.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1105,12 +2176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/053.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/053.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1125,12 +2216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/054.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/054.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1145,12 +2256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/055.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/055.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1165,12 +2296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/056.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/056.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1185,12 +2336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/057.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/057.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1205,12 +2376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/058.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/058.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1225,12 +2416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/059.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/059.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1245,12 +2456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/060.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/060.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1265,12 +2496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/061.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/061.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1285,12 +2536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/062.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/062.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1305,12 +2576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/063.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/063.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1325,12 +2616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/064.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/064.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1345,12 +2656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/065.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/065.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1365,12 +2696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/066.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/066.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1385,12 +2736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/067.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/067.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1405,12 +2776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/068.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/068.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1425,12 +2816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/069.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/069.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1445,12 +2856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/070.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/070.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1465,12 +2896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/071.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/071.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1485,12 +2936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/072.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/072.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1505,12 +2976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/073.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/073.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1525,12 +3016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/074.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/074.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1545,12 +3056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/075.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/075.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1565,12 +3096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/076.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/076.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1585,12 +3136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/077.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/077.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1605,12 +3176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/078.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/078.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1625,12 +3216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/079.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/079.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1645,12 +3256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/080.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/080.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1665,12 +3296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/081.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/081.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/steel.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1685,12 +3336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/082.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/082.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/steel.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1705,12 +3376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/083.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/083.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1725,12 +3416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/084.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/084.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1745,12 +3456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/085.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/085.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1765,12 +3496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/086.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/086.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1785,12 +3536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/087.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/087.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ice.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1805,12 +3576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/088.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/088.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1825,12 +3616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/089.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/089.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1845,12 +3656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/090.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/090.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1865,12 +3696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/091.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/091.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ice.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1885,12 +3736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/092.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/092.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ghost.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1905,12 +3776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/093.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/093.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ghost.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1925,12 +3816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/094.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/094.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ghost.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1945,12 +3856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/095.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/095.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1965,12 +3896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/096.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/096.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -1985,12 +3936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/097.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/097.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2005,12 +3976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/098.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/098.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2025,12 +4016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/099.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/099.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2045,12 +4056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/100.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/100.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2065,12 +4096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/101.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/101.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2085,12 +4136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/102.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/102.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2105,12 +4176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/103.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/103.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2125,12 +4216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/104.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/104.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2145,12 +4256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/105.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/105.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2165,12 +4296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/106.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/106.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2185,12 +4336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/107.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/107.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fight.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2205,12 +4376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/108.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/108.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2225,12 +4416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/109.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/109.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2245,12 +4456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/110.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/110.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/poison.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2265,12 +4496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/111.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/111.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2285,12 +4536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/112.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/112.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ground.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2305,12 +4576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/113.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/113.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2325,12 +4616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/114.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/114.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/grass.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2345,12 +4656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/115.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/115.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2365,12 +4696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/116.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/116.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2385,12 +4736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/117.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/117.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2405,12 +4776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/118.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/118.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2425,12 +4816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/119.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/119.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2445,12 +4856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/120.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/120.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2465,12 +4896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/121.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/121.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2485,12 +4936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/122.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/122.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fairy.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2505,12 +4976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/123.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/123.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2525,12 +5016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/124.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/124.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/ice.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2545,12 +5056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/125.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/125.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2565,12 +5096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/126.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/126.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2585,12 +5136,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/127.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/127.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/bug.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2605,12 +5176,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/128.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/128.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2625,12 +5216,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/129.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/129.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2645,12 +5256,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/130.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/130.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2665,12 +5296,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/131.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/131.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ice.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2685,12 +5336,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/132.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/132.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2705,12 +5376,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/133.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/133.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2725,12 +5416,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/134.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/134.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2745,12 +5456,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/135.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/135.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2765,12 +5496,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/136.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/136.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2785,12 +5536,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/137.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/137.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2805,12 +5576,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/138.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/138.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2825,12 +5616,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/139.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/139.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2845,12 +5656,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/140.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/140.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2865,12 +5696,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/141.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/141.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/water.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2885,12 +5736,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/142.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/142.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/rock.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2905,12 +5776,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/143.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/143.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/normal.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2925,12 +5816,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/144.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/144.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/ice.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2945,12 +5856,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/145.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/145.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/electric.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2965,12 +5896,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/146.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/146.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/fire.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -2985,12 +5936,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/147.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/147.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/dragon.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -3005,12 +5976,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/148.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/148.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/dragon.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -3025,12 +6016,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/149.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/149.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/flying.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="File:.//pics/dragon.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -3045,12 +6056,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/150.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/150.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     <div class="badge">
@@ -3065,12 +6096,32 @@
           </div>
         </div>
         <center>
-          <img
-            src=http://assets22.pokemon.com/assets/cms2/img/pokedex/full/151.png
-            class="pokemon"
-            alt="notFound"
-          />
-          <div class="description"></div>
+          <img src="http://assets22.pokemon.com/assets/cms2/img/pokedex/full/151.png" class="pokemon" alt="notFound" />
+          <div
+            class="description types"
+            style="display:flex;justify-content:space-evenly;"
+          >
+            <div
+              style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
+            >
+              <div>
+                <img
+                  src="File:.//pics/psychic.png;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Grass</div>
+              </div>
+              <div>
+                <img
+                  src="undefined;"
+                  style="height:50px;width:50px;"
+                  alt="notFound"
+                />
+                <div>Poison</div>
+              </div>
+            </div>
+          </div>
         </center>
       </div>
     
