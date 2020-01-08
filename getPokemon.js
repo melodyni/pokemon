@@ -1,5 +1,5 @@
 const pokemons = require("./poke.json");
-const colors = {
+const image = {
   poison: "File:.//pics/poison.png",
   grass: "File:.//pics/grass.png",
   water: "File:.//pics/water.png",
@@ -19,10 +19,20 @@ const colors = {
   ghost: "File:.//pics/ghost.png",
   dark: "File:.//pics/dark.png"
 };
+
 pokemons.forEach(poke => {
-  const types = poke.types;
-  const firstImage = colors[types[0]];
-  const secondImage = colors[types[1]];
+  const createDiv = function(div, power) {
+    div += `<div>
+    <img
+      src="${image[power]}"
+      style="height:50px;width:50px;"
+      alt="notFound"
+    />
+    <div>${power}</div>
+  </div>`;
+    return div;
+  };
+  const powerDiv = poke.types.reduce(createDiv, "");
 
   console.log(
     `<div class="badge">
@@ -45,22 +55,7 @@ pokemons.forEach(poke => {
         <div
           style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
         >
-          <div>
-            <img
-              src="${firstImage};"
-              style="height:50px;width:50px;"
-              alt="notFound"
-            />
-            <div>Grass</div>
-          </div>
-          <div>
-            <img
-              src="${secondImage};"
-              style="height:50px;width:50px;"
-              alt="notFound"
-            />
-            <div>Poison</div>
-          </div>
+          ${powerDiv}
         </div>
       </div>
     </center>
