@@ -1,6 +1,28 @@
 <html>
   <head>
+    <script>
+      const call = function(){
+        const root = document.getElementById("root");
+        root.classList.add("hide");
+        const popup = document.getElementById("popup");
+        popup.classList.add("popup-box");
+      }
+      document.addEventListener('keydown', function(event) {
+        const key = event.key; 
+        if (key === "Escape") {
+          const root = document.getElementById("root");
+          root.style.display="block";
+          const popup = document.getElementById("popup");
+          popup.classList.add("hide");
+        }
+      });
+    </script>
+
     <style>
+      .margintb-1rem {
+        margin: 1rem 0
+      }
+
       .badge {
         justify-content: center;
         height: 450px;
@@ -21,6 +43,7 @@
         border-radius: 10px;
         border-color: transparent;
         background-color: rgb(252, 252, 252);
+        color: rgba(0,0,0,0.65);
       }
       .textA {
         text-align: center;
@@ -62,13 +85,32 @@
       }
 
       .badge:hover {
-        box-shadow: 2px 2px 10px 1px grey;
-        border-color: rgb(98, 105, 112);
+        box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+        border-color: rgba(0,0,0,0.2);
       }
+
+      .hide {
+        display: none;
+      }
+
+      .popup-box {
+        position: absolute; 
+        height: 30em; 
+        width: 60em; 
+        transform: translate(-50%, -50%); 
+        top: 50%; 
+        left: 50%;
+        background: black;
+      }
+      
     </style>
   </head>
   <body>
-    <center>
+       
+      <div id="popup" onkeypress="goBack(event)" >
+    </div>
+    <div  id="root" >
+    <center class="margintb-1rem">
       <img
         src="File:.//pics/pokelogo.png"
         style="height:150px;width:450px;"
@@ -76,7 +118,8 @@
       />
     </center>
     <br /><br />
-    <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">
+    
+    <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;" onclick="call()">
       <div class="badge">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
@@ -5380,5 +5423,6 @@
       </div>
     
     </div>
+  </div</div>>
   </body>
 </html>
