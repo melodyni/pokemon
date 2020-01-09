@@ -3,17 +3,17 @@
     <script>
       const call = function(){
         const root = document.getElementById("root");
-        root.classList.add("hide");
+        root.style.display="none"
         const popup = document.getElementById("popup");
-        popup.classList.add("popup-box");
+        popup.classList.replace("hide","popup-box");
       }
       document.addEventListener('keydown', function(event) {
         const key = event.key; 
         if (key === "Escape") {
           const root = document.getElementById("root");
-          root.style.display="block";
+          root.style.display="block"
           const popup = document.getElementById("popup");
-          popup.classList.add("hide");
+          popup.classList.replace("popup-box","hide");
         }
       });
     </script>
@@ -73,7 +73,7 @@
         font-weight: 300;
       }
 
-      .description {
+      .power {
         padding-top: 2px;
         border-style: solid;
         border-width: 1px;
@@ -87,6 +87,7 @@
       .badge:hover {
         box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
         border-color: rgba(0,0,0,0.2);
+
       }
 
       .hide {
@@ -95,19 +96,48 @@
 
       .popup-box {
         position: absolute; 
-        height: 30em; 
-        width: 60em; 
+        display:flex;
+        padding-top: 17px;
+        justify-content: space-evenly;
+        height: 450px; 
+        width: 900px; 
+        border-style: solid;
+        border-width: 1px;
+        border-color: transparent;
+        border-radius: 30px;
         transform: translate(-50%, -50%); 
         top: 50%; 
         left: 50%;
-        background: black;
+      }
+      .boundary{
+        display: flex;
+       justify-content: center;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(0,0,0,0.3);
+        border-radius: 30px;
+        height: 430px; 
+        width: 440px;
+      }
+      .summary{
+      margin-top: 25px;
+        height: 370px; 
+        width: 370px; 
+        border-style: solid;
+        border-width: 1px;
+        border-color:rgba(0,0,0,0.2);
+        border-radius: 30px;
       }
       
     </style>
   </head>
   <body>
-       
-      <div id="popup" onkeypress="goBack(event)" >
+      <div class="hide" id="popup" onkeypress="goBack(event)">
+        <div class="boundary"> <div class="summary"></div></div>
+       <div class="boundary"><div id="description" class="summary">
+         <div id=""></div>
+       </div id="description"></div>
+        
     </div>
     <div  id="root" >
     <center class="margintb-1rem">
@@ -119,8 +149,8 @@
     </center>
     <br /><br />
     
-    <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;" onclick="call()">
-      <div class="badge">
+    <div style="display:flex;justify-content: space-evenly;flex-wrap: wrap;">
+      <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Bulbasaur</div>
@@ -159,7 +189,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Ivysaur</div>
@@ -198,7 +228,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Venusaur</div>
@@ -237,7 +267,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Charmander</div>
@@ -259,17 +289,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Charmeleon</div>
@@ -291,17 +328,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Charizard</div>
@@ -323,24 +367,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Squirtle</div>
@@ -362,17 +406,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Wartortle</div>
@@ -394,17 +445,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Blastoise</div>
@@ -426,17 +484,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Caterpie</div>
@@ -458,17 +523,24 @@
             >
               <div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Metapod</div>
@@ -490,17 +562,24 @@
             >
               <div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Butterfree</div>
@@ -522,24 +601,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Weedle</div>
@@ -568,17 +647,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kakuna</div>
@@ -607,17 +686,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Beedrill</div>
@@ -646,17 +725,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Pidgey</div>
@@ -678,24 +757,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Pidgeotto</div>
@@ -717,24 +796,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Pidgeot</div>
@@ -756,24 +835,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Rattata</div>
@@ -795,17 +874,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Raticate</div>
@@ -827,17 +913,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Spearow</div>
@@ -859,24 +952,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Fearow</div>
@@ -898,24 +991,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Ekans</div>
@@ -942,12 +1035,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Arbok</div>
@@ -974,12 +1074,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Pikachu</div>
@@ -1001,17 +1108,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Raichu</div>
@@ -1033,17 +1147,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Sandshrew</div>
@@ -1065,17 +1186,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Sandslash</div>
@@ -1097,17 +1225,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidoran-f</div>
@@ -1134,12 +1269,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidorina</div>
@@ -1166,12 +1308,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidoqueen</div>
@@ -1200,17 +1349,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidoran-m</div>
@@ -1237,12 +1386,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidorino</div>
@@ -1269,12 +1425,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Nidoking</div>
@@ -1303,17 +1466,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Clefairy</div>
@@ -1335,17 +1498,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fairy.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fairy</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Clefable</div>
@@ -1367,17 +1537,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fairy.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fairy</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Vulpix</div>
@@ -1399,17 +1576,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Ninetales</div>
@@ -1431,17 +1615,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Jigglypuff</div>
@@ -1463,24 +1654,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/fairy.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fairy</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Wigglytuff</div>
@@ -1502,24 +1693,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/fairy.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fairy</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Zubat</div>
@@ -1541,24 +1732,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
-          style="height:50px;width:50px;"
-          alt="notFound"
-        />
-        <div>flying</div>
-      </div><div>
-        <img
           src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Golbat</div>
@@ -1580,24 +1771,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
-          style="height:50px;width:50px;"
-          alt="notFound"
-        />
-        <div>flying</div>
-      </div><div>
-        <img
           src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Oddish</div>
@@ -1636,7 +1827,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Gloom</div>
@@ -1675,7 +1866,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Vileplume</div>
@@ -1714,7 +1905,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Paras</div>
@@ -1736,11 +1927,11 @@
             >
               <div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>poison</div>
       </div><div>
         <img
           src="File:.//pics/grass.png"
@@ -1753,7 +1944,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Parasect</div>
@@ -1775,11 +1966,11 @@
             >
               <div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>poison</div>
       </div><div>
         <img
           src="File:.//pics/grass.png"
@@ -1792,7 +1983,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Venonat</div>
@@ -1821,17 +2012,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Venomoth</div>
@@ -1860,17 +2051,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Diglett</div>
@@ -1892,17 +2083,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dugtrio</div>
@@ -1924,17 +2122,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Meowth</div>
@@ -1956,17 +2161,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Persian</div>
@@ -1988,17 +2200,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Psyduck</div>
@@ -2020,17 +2239,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Golduck</div>
@@ -2052,17 +2278,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Mankey</div>
@@ -2084,17 +2317,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Primeape</div>
@@ -2116,17 +2356,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Growlithe</div>
@@ -2148,17 +2395,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Arcanine</div>
@@ -2180,17 +2434,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Poliwag</div>
@@ -2212,17 +2473,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Poliwhirl</div>
@@ -2244,17 +2512,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Poliwrath</div>
@@ -2276,24 +2551,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Abra</div>
@@ -2315,17 +2590,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kadabra</div>
@@ -2347,17 +2629,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Alakazam</div>
@@ -2379,17 +2668,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Machop</div>
@@ -2411,17 +2707,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Machoke</div>
@@ -2443,17 +2746,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Machamp</div>
@@ -2475,17 +2785,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Bellsprout</div>
@@ -2524,7 +2841,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Weepinbell</div>
@@ -2563,7 +2880,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Victreebel</div>
@@ -2602,7 +2919,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Tentacool</div>
@@ -2631,17 +2948,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Tentacruel</div>
@@ -2670,17 +2987,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Geodude</div>
@@ -2702,24 +3019,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Graveler</div>
@@ -2741,24 +3058,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Golem</div>
@@ -2780,24 +3097,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Ponyta</div>
@@ -2819,17 +3136,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Rapidash</div>
@@ -2851,17 +3175,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Slowpoke</div>
@@ -2883,24 +3214,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Slowbro</div>
@@ -2922,24 +3253,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Magnemite</div>
@@ -2961,24 +3292,24 @@
             >
               <div>
         <img
-          src="File:.//pics/steel.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>steel</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Magneton</div>
@@ -3000,24 +3331,24 @@
             >
               <div>
         <img
-          src="File:.//pics/steel.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>steel</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Farfetchd</div>
@@ -3039,24 +3370,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Doduo</div>
@@ -3078,24 +3409,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dodrio</div>
@@ -3117,24 +3448,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Seel</div>
@@ -3156,17 +3487,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dewgong</div>
@@ -3188,24 +3526,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ice.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ice</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Grimer</div>
@@ -3232,12 +3570,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Muk</div>
@@ -3264,12 +3609,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Shellder</div>
@@ -3291,17 +3643,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Cloyster</div>
@@ -3323,24 +3682,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ice.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ice</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Gastly</div>
@@ -3369,17 +3728,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ghost.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ghost</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Haunter</div>
@@ -3408,17 +3767,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ghost.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ghost</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Gengar</div>
@@ -3447,17 +3806,17 @@
         <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ghost.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ghost</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Onix</div>
@@ -3479,24 +3838,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Drowzee</div>
@@ -3518,17 +3877,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Hypno</div>
@@ -3550,17 +3916,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Krabby</div>
@@ -3582,17 +3955,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kingler</div>
@@ -3614,17 +3994,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Voltorb</div>
@@ -3646,17 +4033,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Electrode</div>
@@ -3678,17 +4072,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Exeggcute</div>
@@ -3710,24 +4111,24 @@
             >
               <div>
         <img
+          src="File:.//pics/poison.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>poison</div>
+      </div><div>
+        <img
           src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
         <div>grass</div>
-      </div><div>
-        <img
-          src="File:.//pics/psychic.png"
-          style="height:50px;width:50px;"
-          alt="notFound"
-        />
-        <div>psychic</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Exeggutor</div>
@@ -3749,24 +4150,24 @@
             >
               <div>
         <img
+          src="File:.//pics/poison.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>poison</div>
+      </div><div>
+        <img
           src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
         <div>grass</div>
-      </div><div>
-        <img
-          src="File:.//pics/psychic.png"
-          style="height:50px;width:50px;"
-          alt="notFound"
-        />
-        <div>psychic</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Cubone</div>
@@ -3788,17 +4189,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Marowak</div>
@@ -3820,17 +4228,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Hitmonlee</div>
@@ -3852,17 +4267,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Hitmonchan</div>
@@ -3884,17 +4306,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fight.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fighting</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Lickitung</div>
@@ -3916,17 +4345,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Koffing</div>
@@ -3953,12 +4389,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Weezing</div>
@@ -3985,12 +4428,19 @@
           alt="notFound"
         />
         <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Rhyhorn</div>
@@ -4012,24 +4462,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Rhydon</div>
@@ -4051,24 +4501,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ground.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ground</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Chansey</div>
@@ -4090,17 +4540,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Tangela</div>
@@ -4122,6 +4579,13 @@
             >
               <div>
         <img
+          src="File:.//pics/poison.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>poison</div>
+      </div><div>
+        <img
           src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
@@ -4132,7 +4596,7 @@
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kangaskhan</div>
@@ -4154,17 +4618,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Horsea</div>
@@ -4186,17 +4657,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Seadra</div>
@@ -4218,17 +4696,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Goldeen</div>
@@ -4250,17 +4735,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Seaking</div>
@@ -4282,17 +4774,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Staryu</div>
@@ -4314,17 +4813,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Starmie</div>
@@ -4346,24 +4852,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Mr-mime</div>
@@ -4385,24 +4891,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fairy.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fairy</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Scyther</div>
@@ -4424,24 +4930,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Jynx</div>
@@ -4463,24 +4969,24 @@
             >
               <div>
         <img
-          src="File:.//pics/ice.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ice</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Electabuzz</div>
@@ -4502,17 +5008,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Magmar</div>
@@ -4534,17 +5047,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Pinsir</div>
@@ -4566,17 +5086,24 @@
             >
               <div>
         <img
-          src="File:.//pics/bug.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>bug</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Tauros</div>
@@ -4598,17 +5125,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Magikarp</div>
@@ -4630,17 +5164,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Gyarados</div>
@@ -4662,24 +5203,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Lapras</div>
@@ -4701,24 +5242,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ice.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ice</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Ditto</div>
@@ -4740,17 +5281,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Eevee</div>
@@ -4772,17 +5320,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Vaporeon</div>
@@ -4804,17 +5359,24 @@
             >
               <div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Jolteon</div>
@@ -4836,17 +5398,24 @@
             >
               <div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Flareon</div>
@@ -4868,17 +5437,24 @@
             >
               <div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Porygon</div>
@@ -4900,17 +5476,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Omanyte</div>
@@ -4932,24 +5515,24 @@
             >
               <div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Omastar</div>
@@ -4971,24 +5554,24 @@
             >
               <div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kabuto</div>
@@ -5010,24 +5593,24 @@
             >
               <div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Kabutops</div>
@@ -5049,24 +5632,24 @@
             >
               <div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/water.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>water</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Aerodactyl</div>
@@ -5088,24 +5671,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/rock.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>rock</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Snorlax</div>
@@ -5127,17 +5710,24 @@
             >
               <div>
         <img
-          src="File:.//pics/normal.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>normal</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Articuno</div>
@@ -5159,24 +5749,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/ice.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>ice</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Zapdos</div>
@@ -5198,24 +5788,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/electric.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>electric</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Moltres</div>
@@ -5237,24 +5827,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/fire.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>fire</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dratini</div>
@@ -5276,17 +5866,24 @@
             >
               <div>
         <img
-          src="File:.//pics/dragon.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>dragon</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dragonair</div>
@@ -5308,17 +5905,24 @@
             >
               <div>
         <img
-          src="File:.//pics/dragon.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>dragon</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Dragonite</div>
@@ -5340,24 +5944,24 @@
             >
               <div>
         <img
-          src="File:.//pics/flying.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>flying</div>
+        <div>poison</div>
       </div><div>
         <img
-          src="File:.//pics/dragon.png"
+          src="File:.//pics/grass.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>dragon</div>
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Mewtwo</div>
@@ -5379,17 +5983,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
-    <div class="badge">
+     <div class="badge"  onclick="call()">
         <div style="display: flex;justify-content:center;" class="name">
           <div style="display: flex;justify-content:end;">
             <div class="textA">Mew</div>
@@ -5411,18 +6022,24 @@
             >
               <div>
         <img
-          src="File:.//pics/psychic.png"
+          src="File:.//pics/poison.png"
           style="height:50px;width:50px;"
           alt="notFound"
         />
-        <div>psychic</div>
+        <div>poison</div>
+      </div><div>
+        <img
+          src="File:.//pics/grass.png"
+          style="height:50px;width:50px;"
+          alt="notFound"
+        />
+        <div>grass</div>
       </div>
             </div>
           </div>
         </center>
       </div>
     
-    </div>
-  </div</div>>
+    </div>  
   </body>
 </html>
