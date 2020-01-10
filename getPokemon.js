@@ -35,7 +35,10 @@ pokemons.forEach(poke => {
   const powerDiv = poke.types.reduce(createDiv, "");
 
   console.log(
-    ` <div class="badge"  onclick="call()">
+    `  <div class="badge"  onclick="call(this)">
+    <div id="summary" class="textB hide"><p class= "textA">${poke.name}</p><p>
+     ${poke.description}
+    </p></div>
     <div style="display: flex;justify-content:center;" class="name">
       <div style="display: flex;justify-content:end;">
         <div class="textA">${poke.name}</div>
@@ -55,22 +58,7 @@ pokemons.forEach(poke => {
         <div
           style="display: flex;justify-content: space-evenly;height:80px;width:250px ;"
         >
-          <div>
-    <img
-      src="File:.//pics/poison.png"
-      style="height:50px;width:50px;"
-      alt="notFound"
-    />
-    <div>poison</div>
-  </div><div>
-    <img
-      src="File:.//pics/grass.png"
-      style="height:50px;width:50px;"
-      alt="notFound"
-    />
-    <div>grass</div>
-  </div>
-        </div>
+        ${powerDiv}
       </div>
     </center>
   </div>`

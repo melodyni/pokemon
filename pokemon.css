@@ -1,0 +1,116 @@
+.margintb-1rem {
+  margin: 1rem 0;
+}
+
+.badge {
+  justify-content: center;
+  height: 450px;
+  width: 320px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(214, 213, 213);
+  border-radius: 10px;
+  margin-bottom: 27px;
+}
+
+.name {
+  margin: 7px;
+  height: 50px;
+  width: 305px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: rgb(252, 252, 252);
+  color: rgba(0, 0, 0, 0.65);
+}
+.textA {
+  text-align: center;
+  padding-top: 7px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.textB {
+  padding: 20px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.pokemon {
+  height: 290px;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.pokeball {
+  margin-left: 5px;
+  margin-top: 7px;
+  height: 35px;
+  width: 35px;
+}
+
+.types {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.power {
+  padding-top: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 10px;
+  height: 70px;
+  width: 300px;
+  background-color: rgb(252, 252, 252);
+}
+
+.badge:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.hide {
+  display: none;
+}
+
+.popup-box {
+  position: absolute;
+  display: flex;
+  padding-top: 17px;
+  justify-content: space-evenly;
+  height: 450px;
+  width: 900px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+.boundary {
+  display: flex;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  height: 430px;
+  width: 440px;
+}
+.summary-box {
+  margin-top: 25px;
+  height: 370px;
+  width: 370px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
