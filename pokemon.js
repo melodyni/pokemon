@@ -1,8 +1,7 @@
 const call = function(context) {
   root.style.display = "none";
   popup.classList.replace("hide", "popup-box");
-  const summary = context.childNodes[1];
-  // console.log()
+  const summary = context.childNodes[1].cloneNode(true);
   description.innerText = "";
   summary.style.display = "block";
   description.appendChild(summary);

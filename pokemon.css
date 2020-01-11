@@ -80,6 +80,10 @@
   display: none;
 }
 
+.popup-page {
+  background-color: black;
+}
+
 .popup-box {
   position: absolute;
   display: flex;
